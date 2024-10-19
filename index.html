@@ -3,39 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Przemysław Marciniak's portfolio and projects including Open HRV Project">
     <title>Przemysław Marciniak's Work</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #363636 100%);
+            color: white;
+            line-height: 1.6;
         }
+
+        .container {
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            max-width: 600px;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
         h1 {
-            font-weight: 700;
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
         }
+
+        p {
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
         a {
-            display: inline-block;
-            margin: 20px;
-            padding: 15px 30px;
             text-decoration: none;
-            background-color: #007BFF;
-            color: #fff;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+            color: white;
+            padding: 1rem 1.25rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
         }
+
+        a:after {
+            content: "→";
+            opacity: 0.5;
+        }
+
         a:hover {
-            background-color: #0056b3;
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Explore My Work</h1>
-    <p>Welcome! My name is Przemysław Marciniak. Below, you can find links to explore my projects.</p>
-    <a href="https://open-hrv.com/" target="_blank">Open HRV Project</a>
-    <a href="https://www.pmarciniak.pl/" target="_blank">My Personal Website</a>
+    <div class="container">
+        <h1>Przemysław Marciniak</h1>
+        <p>Welcome to my digital space. Here you'll find links to my current projects and personal website.</p>
+        <div class="links">
+            <a href="https://open-hrv.com/" target="_blank" rel="noopener noreferrer">
+                Open HRV Project
+            </a>
+            <a href="https://www.pmarciniak.pl/" target="_blank" rel="noopener noreferrer">
+                Personal Website
+            </a>
+        </div>
+    </div>
 </body>
 </html>
